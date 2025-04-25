@@ -61,8 +61,7 @@
         <hr>
 
         <h3>About KG-S3 Team</h3>
-        <p>We are a passionate team focused on building secure and stable deployment environments.  
-        Our mission is to ensure safe, reliable delivery of services through automation and continuous improvement.</p>
+        <p>We are a cloud security team dedicated to building secure, stable, and resilient service environments. Our primary focus is on enhancing security and reliability across infrastructure and deployment pipelines</p>
 
         <h3>🔧 Key Technologies</h3>
         <ul>
