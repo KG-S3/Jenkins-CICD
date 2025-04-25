@@ -33,6 +33,9 @@
             list-style: none;
             padding: 0;
         }
+        ul li {
+            margin: 5px 0;
+        }
     </style>
 </head>
 <body>
@@ -48,3 +51,29 @@
 
         <h3>📦 Deployment Targets:</h3>
         <ul>
+            <li>✅ Windows Tomcat</li>
+            <li>✅ Ubuntu Tomcat</li>
+            <li>✅ Dockerized Tomcat</li>
+        </ul>
+
+        <p>This project is built using <strong>Maven</strong> and deployed via <strong>Jenkins Deploy Plugin</strong>.</p>
+
+        <hr>
+
+        <h3>About KG-S3 Team</h3>
+        <p>We are a passionate team focused on building secure and stable deployment environments.  
+        Our mission is to ensure safe, reliable delivery of services through automation and continuous improvement.</p>
+
+        <h3>🔧 Key Technologies</h3>
+        <ul>
+            <li>🔧 Maven for build automation</li>
+            <li>⚙️ Jenkins for Continuous Integration/Deployment</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 KG-S3 Team. All rights reserved.
+    </div>
+
+</body>
+</html>
