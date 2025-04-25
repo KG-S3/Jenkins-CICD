@@ -4,7 +4,7 @@
 <body>
     <h2>KG-S3 server12341324</h2>
     <hr>
-    <h1>Welcome to the KG-S3 website</h1>
+    <h1>Welcome to the KG-S3 website!!!!!!!!!!!!!!!</h1>
     <h2>Today is <fmt:formatDate value="${today}" pattern="yyyy-MM-dd" /></h2>
     <h3>Version: 20</h3>
 </body>
