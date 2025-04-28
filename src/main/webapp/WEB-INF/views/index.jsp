@@ -60,7 +60,7 @@
 
         <hr>
 
-        <h3>About KG-S3 Team</h3>
+        <h3>About KG-security3 Team</h3>
         <p>We are a cloud security team dedicated to building secure, stable, and resilient service environments. Our primary focus is on enhancing security and reliability across infrastructure and deployment pipelines</p>
 
         <h3>🔧 Key Technologies</h3>
