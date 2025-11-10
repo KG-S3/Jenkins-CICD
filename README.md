@@ -1,43 +1,48 @@
-#jenkins_project
-# 🌟 데브옵스 & 클라우드 기술 포트폴리오
+# 🌟 최원우의 데브옵스 & 클라우드 엔지니어링 포트폴리오
 
-![GitHub Actions 뱃지](https://img.shields.io/badge/CI%20Status-Passing-brightgreen)
-![AWS 뱃지](https://img.shields.io/badge/Cloud-AWS-orange)
-![Kubernetes 뱃지](https://img.shields.io/badge/Orchestration-Kubernetes-blue)
-
----
-
-## 💡 ABOUT ME & 프로젝트 개요
-
-안녕하세요! 클라우드 인프라와 CI/CD 자동화에 관심 있는 [본인 이름]입니다. 본 레포지토리는 제가 수행한 **클라우드 구축 및 데브옵스 자동화** 프로젝트들의 핵심 아키텍처와 기술적 과정을 정리한 공간입니다.
-
-저는 **안정성, 확장성, 인프라의 코드화(IaC)**를 핵심 가치로 두고 있습니다.
+![CI/CD Status](https://img.shields.io/badge/CI%2FCD-Active-brightgreen?style=flat-square)
+![AWS Cloud](https://img.shields.io/badge/Cloud-AWS-orange?style=flat-square)
+![Kubernetes](https://img.shields.io/badge/Container%20Orchestration-Kubernetes-blue?style=flat-square)
+![Terraform](https://img.shields.io/badge/IaC-Terraform-7B42BC?style=flat-square)
 
 ---
 
-## 🛠️ 핵심 프로젝트 요약
+## 💡 About Me: 최원우 (Kim Do-Hyun)
 
-### 1. 🚀 하이브리드 CI/CD 파이프라인 구축 (Jenkins + VMWare + AWS)
+클라우드 환경에서의 안정적인 서비스 구축과 자동화된 운영을 꿈꾸는 **데브옵스/클라우드 엔지니어 김도현**입니다. 저는 반복적인 작업을 자동화하고, 시스템의 안정성과 확장성을 극대화하는 데 열정을 가지고 있습니다. 사용자에게 끊김 없는 서비스를 제공하기 위한 기술적 도전을 즐깁니다.
 
-* **목표:** 기존 온프레미스(VMWare) 환경과 AWS 클라우드를 통합하여 배포 자동화.
-* **주요 기술:** **Jenkins Controller(EC2)**, Jenkins Agent(Windows, Ubuntu, Docker), Maven 빌드, Git Webhook.
-* **성취:** 세 가지 이질적인 환경에 대한 **단일 파이프라인** 구현 및 배포 시간 90% 단축.
+* **연락처:** [your_email@example.com] | [010-XXXX-XXXX]
+* **깃허브:** [GitHub 계정 링크]
+* **포부:** **'시스템을 코드로 관리'**하여 빠르고 안정적인 가치를 창출하는 엔지니어가 되겠습니다.
 
-**전체 아키텍처 다이어그램:**
+---
+
+## 🛠️ 보유 기술 스택
+
+| 분류 | 기술 스택 | 핵심 사용 도구 |
+| :--- | :--- | :--- |
+| **Cloud** | AWS (EC2, S3, VPC, IAM, ECR, EKS) | EC2, VPC, Security Group |
+| **CI/CD** | Jenkins, Git, Maven, Docker, Tomcat | Jenkins Pipeline, Git Webhook |
+| **Container** | Docker, Kubernetes (EKS) | Dockerfile, Kubernetes YAML |
+| **IaC** | Terraform | AWS Provider, Module |
+| **Language** | Java (Spring), Shell Script | Java 1.8, Bash |
+
+---
+
+## 🚀 프로젝트 경험 요약: 하이브리드 CI/CD 파이프라인 구축
+
+### 1. 프로젝트 개요 및 목표
+
+* **프로젝트명:** Spring Web Project용 하이브리드 클라우드 CI/CD 구축
+* **목표:** 기존 **VMware 기반의 레거시 환경**과 **AWS 클라우드**를 통합하고, **단일 Jenkins 파이프라인**으로 다중 환경(Windows, Ubuntu, Docker)에 자동 배포하는 시스템 구현.
+* **해결 과제:** 이질적인 OS 환경에 대해 파일 전송 및 서비스 재시작 권한 문제를 해결하고, Maven 기반의 자동 테스트를 통합하여 품질 보증.
+
+### 2. 🗺️ 아키텍처 다이어그램 및 흐름
+
+**Jenkins Controller(AWS EC2)를 중앙 통제실로 사용하고, 3가지 유형의 Agent를 연결하여 작업 부하를 분산했습니다.**
 ![하이브리드 아키텍처 다이어그램](images/ci_cd_architecture.png)
 
-### 2. 🌐 AWS 인프라 자동화 (Terraform & EKS)
+### 3. CI (지속적 통합) 과정
 
-* **목표:** 쿠버네티스(EKS) 클러스터와 VPC 네트워크 환경 전체를 코드로 관리.
-* **주요 기술:** **Terraform**, AWS EKS, AWS VPC, Kubernetes Ingress/Service.
-* **성취:** 클릭 한 번으로 수백 개의 클라우드 리소스를 10분 내에 **반복 가능하게** 구축하는 IaC 환경 구현.
-
----
-
-## ✅ CI/CD 빌드 성공 입증 (Proof of Work)
-
-Git Push 후 Jenkins에서 자동 테스트를 포함한 빌드가 성공적으로 완료되었음을 보여주는 로그입니다.
-
-```bash
-[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
-[INFO] BUILD SUCCESS
+* **트리거:** GitHub Webhook (`Poll SCM` 방식)을 설정하여 코드 푸시를 즉시 감지.
+* **빌드 도구:** **`pom.xml
